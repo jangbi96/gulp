@@ -1,0 +1,51 @@
+$inputFont : 18px;
+$inputFontsm : 14px;
+$inputBorder : #ccc;
+$inputBorderFocus : #08c1e7;
+
+.class {
+    .p {
+        font-size:2px;
+    }
+}
+
+form.lemon {
+    .lemon-group {
+        position:relative;
+        input.lemon {
+            width:100%;
+            padding:10px 0;
+            border:none;
+            border-bottom: 2px solid $inputBorder;
+            font-size:$inputFont;
+            &::placeholder {
+                font-size: $inputFont;
+                color: transparent;
+              }
+            &__on {
+                border-bottom: 2px solid $inputBorderFocus;
+              }
+        }
+        input.lemon:focus {
+            border-bottom: 2px solid $inputBorderFocus;
+
+        }
+        input.lemon:after {
+            content:'T';
+            position:absolute;
+        }
+        label.focus {
+            font-size:$inputFontsm;
+            color:$inputBorder;
+            position:absolute;
+            top:20%;
+            left:0;
+            &__on {
+                transform: translateY(-100%);
+                transition: all 100ms;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,30 @@
+.class .p {
+  font-size: 2px; }
+
+form.lemon .lemon-group {
+  position: relative; }
+  form.lemon .lemon-group input.lemon {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px; }
+    form.lemon .lemon-group input.lemon::placeholder {
+      font-size: 18px;
+      color: transparent; }
+    form.lemon .lemon-group input.lemon__on {
+      border-bottom: 2px solid #08c1e7; }
+  form.lemon .lemon-group input.lemon:focus {
+    border-bottom: 2px solid #08c1e7; }
+  form.lemon .lemon-group input.lemon:after {
+    content: 'T';
+    position: absolute; }
+  form.lemon .lemon-group label.focus {
+    font-size: 14px;
+    color: #ccc;
+    position: absolute;
+    top: 20%;
+    left: 0; }
+    form.lemon .lemon-group label.focus__on {
+      transform: translateY(-100%);
+      transition: all 100ms; }
